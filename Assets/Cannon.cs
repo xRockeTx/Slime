@@ -6,7 +6,7 @@ public class Cannon : MonoBehaviour
 {
     private Following Following;
     private bool isFollow=false;
-    public GameObject ShootObject;
+    public GameObject Slime,SuperSlime;
     public float Force=10f,Firerate=.4f;
     private float currentFirerent=0;
 
@@ -28,10 +28,15 @@ public class Cannon : MonoBehaviour
         if (Input.GetKey(KeyCode.Mouse0)&&currentFirerent >= Firerate)
         {
             currentFirerent = 0;
-            Shoot();
+            Shoot(Slime);
+        }
+        else if (Input.GetKey(KeyCode.Mouse1) && currentFirerent >= Firerate)
+        {
+            currentFirerent = 0;
+            Shoot(SuperSlime);
         }
     }
-    private void Shoot()
+    private void Shoot(GameObject shootObject)
     {
         Vector2 direction;
         if (isFollow)
@@ -43,7 +48,7 @@ public class Cannon : MonoBehaviour
             direction = transform.up;
         }
 
-        GameObject gameObject = Instantiate(ShootObject);
+        GameObject gameObject = Instantiate(shootObject);
         gameObject.transform.position = transform.position;
         gameObject.GetComponent<Rigidbody2D>().AddForce(direction*Force);
     }

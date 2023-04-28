@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KillingObstacle : MonoBehaviour
+public class Breakable : MonoBehaviour
 {
     
 }
