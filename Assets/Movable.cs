@@ -8,7 +8,7 @@ public class Movable : MonoBehaviour
     public float MoveSpeed=2;
 
     public List<Transform> Points;
-    public int ToID=1;
+    private int ToID=1;
 
     private void Awake()
     {

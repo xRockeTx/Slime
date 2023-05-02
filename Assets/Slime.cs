@@ -56,6 +56,7 @@ public class Slime : MonoBehaviour
         }
         
     }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         bool isAlive = true;

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5908854669897370438}
   - component: {fileID: 33838287987878181}
   - component: {fileID: 4466901122035813179}
+  - component: {fileID: -2450116500827685924}
   m_Layer: 0
   m_Name: SuperSlime
   m_TagString: Slime
@@ -149,3 +150,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91cde6b3bcacc894da15d7782958b241, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-2450116500827685924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6664225031387961321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b8cc17157a70ae488690fa7226f27cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Range: 5

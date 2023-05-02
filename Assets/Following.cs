@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Following : MonoBehaviour
 {
-    public Vector2 Direction;
+    [HideInInspector] public Vector2 Direction;
     private void Update()
     {
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
