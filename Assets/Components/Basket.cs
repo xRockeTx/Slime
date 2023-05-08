@@ -8,10 +8,7 @@ public class Basket : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
+        Destroy(collision.gameObject);
         Rating.UpdateSlimesAmount(1);   
-    }
-    public void OnTriggerExit2D(Collider2D collision)
-    {
-        Rating.UpdateSlimesAmount(-1);
     }
 }

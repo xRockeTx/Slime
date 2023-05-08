@@ -10,15 +10,20 @@ public class Rating : MonoBehaviour
     public Image Star1, Star2, Star3;
     public int Amount;
     public int Star1Amount, Star2Amount, Star3Amount;
-    private void Awake()
+    public GameObject Panel;
+
+    public FinishUI Finish;
+
+    public void Awake()
     {
+        Panel.SetActive(true);
         Amount = 0;
         UpdateSlimesAmount(0);
     }
     public void UpdateSlimesAmount(int amount)
     {
         Amount += amount;
-        SlimesAmountText.text = Amount.ToString();
+        //SlimesAmountText.text = Amount.ToString();
 
         if(Amount > Star1Amount)
         {
@@ -29,15 +34,16 @@ public class Rating : MonoBehaviour
                 if (Amount > Star1Amount+Star2Amount+ Star3Amount)
                 {
                     Star3.fillAmount = 1;
+                    SendInfo();
                 }
                 else
                 {
-                    Star3.fillAmount = (float)Amount / (float)(Star1Amount + Star2Amount+ Star3Amount);
+                    Star3.fillAmount = (float)(Amount - Star1Amount - Star2Amount) / (float)(Star3Amount);
                 }
             }
             else
             {
-                Star2.fillAmount = (float)Amount / (float)(Star1Amount + Star2Amount);
+                Star2.fillAmount = (float)(Amount- Star1Amount) / (float)(Star2Amount);
                 Star3.fillAmount = 0;
             }
         }
@@ -47,5 +53,12 @@ public class Rating : MonoBehaviour
             Star2.fillAmount = 0;
             Star3.fillAmount = 0;
         }
+    }
+    public void SendInfo()
+    {
+        Panel.SetActive(false);
+        Finish.ReciveData(Amount / Star1Amount, 
+            Amount / (Star1Amount + Star2Amount),
+            Amount / (Star1Amount + Star2Amount + Star3Amount));
     }
 }
