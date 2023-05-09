@@ -254,6 +254,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2498120425134970000, guid: 945351be6b8973c4d8d6cce91ad483b2, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498120425134970000, guid: 945351be6b8973c4d8d6cce91ad483b2, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498120425134970000, guid: 945351be6b8973c4d8d6cce91ad483b2, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498120425134970000, guid: 945351be6b8973c4d8d6cce91ad483b2, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498120425134970000, guid: 945351be6b8973c4d8d6cce91ad483b2, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498120425134970000, guid: 945351be6b8973c4d8d6cce91ad483b2, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2498120425365908947, guid: 945351be6b8973c4d8d6cce91ad483b2, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -341,6 +365,54 @@ PrefabInstance:
     - target: {fileID: 2498120425365908956, guid: 945351be6b8973c4d8d6cce91ad483b2, type: 3}
       propertyPath: m_Name
       value: UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498120426061698840, guid: 945351be6b8973c4d8d6cce91ad483b2, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498120426061698840, guid: 945351be6b8973c4d8d6cce91ad483b2, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498120426061698840, guid: 945351be6b8973c4d8d6cce91ad483b2, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498120426061698840, guid: 945351be6b8973c4d8d6cce91ad483b2, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498120426061698840, guid: 945351be6b8973c4d8d6cce91ad483b2, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498120426061698840, guid: 945351be6b8973c4d8d6cce91ad483b2, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498120426592026146, guid: 945351be6b8973c4d8d6cce91ad483b2, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498120426592026146, guid: 945351be6b8973c4d8d6cce91ad483b2, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498120426592026146, guid: 945351be6b8973c4d8d6cce91ad483b2, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498120426592026146, guid: 945351be6b8973c4d8d6cce91ad483b2, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498120426592026146, guid: 945351be6b8973c4d8d6cce91ad483b2, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498120426592026146, guid: 945351be6b8973c4d8d6cce91ad483b2, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 945351be6b8973c4d8d6cce91ad483b2, type: 3}
@@ -447,7 +519,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7792506, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -759,7 +831,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.764151, g: 0.75261664, b: 0.75261664, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -817,6 +889,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5001457670333052937, guid: 39358871119221547bc8271c75d69cc8, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001457670333052937, guid: 39358871119221547bc8271c75d69cc8, type: 3}
+      propertyPath: m_Color.g
+      value: 0.6252799
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001457670333052937, guid: 39358871119221547bc8271c75d69cc8, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5001457670440209614, guid: 39358871119221547bc8271c75d69cc8, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -864,6 +948,18 @@ PrefabInstance:
     - target: {fileID: 5001457670440209615, guid: 39358871119221547bc8271c75d69cc8, type: 3}
       propertyPath: m_Name
       value: Basket
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001457670617464494, guid: 39358871119221547bc8271c75d69cc8, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001457670617464494, guid: 39358871119221547bc8271c75d69cc8, type: 3}
+      propertyPath: m_Color.g
+      value: 0.6252799
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001457670617464494, guid: 39358871119221547bc8271c75d69cc8, type: 3}
+      propertyPath: m_Color.r
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5001457670775845603, guid: 39358871119221547bc8271c75d69cc8, type: 3}
       propertyPath: Rating
