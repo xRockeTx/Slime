@@ -57,8 +57,8 @@ public class Rating : MonoBehaviour
     public void SendInfo()
     {
         Panel.SetActive(false);
-        Finish.ReciveData(Amount / Star1Amount, 
-            Amount / (Star1Amount + Star2Amount),
-            Amount / (Star1Amount + Star2Amount + Star3Amount));
+        Finish.ReciveData(Mathf.Min(Amount / Star1Amount,1),
+            Mathf.Min(Amount / (Star1Amount + Star2Amount), 1),
+            Mathf.Min(Amount / (Star1Amount + Star2Amount + Star3Amount), 1));
     }
 }
