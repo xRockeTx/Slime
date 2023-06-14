@@ -23,7 +23,18 @@ public class FinishUI : MonoBehaviour
     }
     public void SaveData(int sa)
     {
-        PlayerPrefs.SetInt(SceneManager.GetActiveScene().name, sa);
+        string name = SceneManager.GetActiveScene().name;
+        if (PlayerPrefs.HasKey(name))
+        {
+            if (PlayerPrefs.GetInt(name)<sa)
+            {
+                PlayerPrefs.SetInt(SceneManager.GetActiveScene().name, sa);
+            }
+        }
+        else
+        {
+            PlayerPrefs.SetInt(SceneManager.GetActiveScene().name, sa);
+        }
     }
 
     public void ToMenu()

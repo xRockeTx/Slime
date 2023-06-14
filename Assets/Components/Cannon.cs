@@ -8,11 +8,12 @@ public class Cannon : MonoBehaviour
     public TextMeshProUGUI SlimesAmountText;
     private Following Following;
     private bool isFollow=false;
-    public GameObject Slime,SuperSlime;
+    public GameObject CurrentSlime;
     public float Force=10f,Firerate=.4f;
     public int SlimesAmount=20, FirstSlimesAmount=20;
     private float currentFirerent=0;
     public Rating Rating;
+    public bool canShoot;
 
     public void Awake()
     {
@@ -23,6 +24,11 @@ public class Cannon : MonoBehaviour
             isFollow = transform;
             Following = followingComponent;
         }
+        canShoot = true;
+    }
+    public void Start()
+    {
+        AttractivePanel.instance.Attracts.Add(Attract);
     }
 
     private void Update()
@@ -31,18 +37,14 @@ public class Cannon : MonoBehaviour
         {
             currentFirerent += Time.deltaTime;
         }
-        if (SlimesAmount > 0 && currentFirerent >= Firerate)
+        
+    }
+    public void Attract()
+    {
+        if (SlimesAmount > 0 && currentFirerent >= Firerate && canShoot)
         {
-            if (Input.GetKey(KeyCode.Mouse0))
-            {
-                currentFirerent = 0;
-                Shoot(Slime);
-            }
-            else if (Input.GetKey(KeyCode.Mouse1))
-            {
-                currentFirerent = 0;
-                Shoot(SuperSlime);
-            }
+            currentFirerent = 0;
+            Shoot(CurrentSlime);
         }
     }
     private void Shoot(GameObject shootObject)
@@ -60,6 +62,12 @@ public class Cannon : MonoBehaviour
         GameObject gameObject = Instantiate(shootObject);
         gameObject.transform.position = transform.position;
         gameObject.GetComponent<Rigidbody2D>().AddForce(direction*Force);
+
+        if(gameObject.TryGetComponent<Magnetic>(out Magnetic magnetic))
+        {
+            magnetic.Cannon = this;
+            magnetic.Initialize();
+        }
 
         SlimesAmount--;
         SlimesAmountText.text = SlimesAmount.ToString();

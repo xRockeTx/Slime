@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class Level : MonoBehaviour
 {
     public Image Star1, Star2, Star3;
+    public Image Close;
     public Color HasStar, HasntStar;
     public bool isComplete;
     public TextMeshProUGUI LevelText;
@@ -18,11 +19,15 @@ public class Level : MonoBehaviour
         Star2.color = star2 ? HasStar : HasntStar;
         Star3.color = star3 ? HasStar : HasntStar;
         isComplete = complete;
+        Close.gameObject.SetActive(!isComplete);
         LevelText.text = level.ToString();
         CurrentLevel = level;
     }
     public void RunLevel()
     {
-        SceneManager.LoadScene($"Level{CurrentLevel}");
+        if (isComplete)
+        {
+            SceneManager.LoadScene($"Level{CurrentLevel}");
+        }
     }
 }

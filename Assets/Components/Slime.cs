@@ -39,7 +39,11 @@ public class Slime : MonoBehaviour
         {
             colliders = new Collider2D[1] { collision };
         }
-
+        if (gameObject.TryGetComponent<Magnetic>(out Magnetic magnetic))
+        {
+            magnetic.Cannon.canShoot = true;
+            AttractivePanel.instance.isMagnetic = true;
+        }
         if (isDestructive)
         {
             foreach (Collider2D collider in colliders)
@@ -71,7 +75,6 @@ public class Slime : MonoBehaviour
         {
             colliders = new Collider2D[1] { collision.collider };
         }
-
         if (isDestructive)
         {
             isAlive = false;
