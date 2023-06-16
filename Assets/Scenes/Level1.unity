@@ -561,6 +561,30 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4866148800703615476, guid: 945351be6b8973c4d8d6cce91ad483b2, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4866148800703615476, guid: 945351be6b8973c4d8d6cce91ad483b2, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4866148800703615476, guid: 945351be6b8973c4d8d6cce91ad483b2, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4866148800703615476, guid: 945351be6b8973c4d8d6cce91ad483b2, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4866148800703615476, guid: 945351be6b8973c4d8d6cce91ad483b2, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4866148800703615476, guid: 945351be6b8973c4d8d6cce91ad483b2, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5855437983797019834, guid: 945351be6b8973c4d8d6cce91ad483b2, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -573,7 +597,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2498120425365908959, guid: 945351be6b8973c4d8d6cce91ad483b2, type: 3}
   m_PrefabInstance: {fileID: 282414354}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1143995559}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0f3a3cc3e8b86c148b6d7f76f1022f63, type: 3}
@@ -955,24 +979,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1143995559 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2498120425365908956, guid: 945351be6b8973c4d8d6cce91ad483b2, type: 3}
-  m_PrefabInstance: {fileID: 282414354}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1143995565
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1143995559}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f45a9c5ae9912343b232a42bcb2a81b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isMagnetic: 0
 --- !u!1 &1431235689
 GameObject:
   m_ObjectHideFlags: 0
