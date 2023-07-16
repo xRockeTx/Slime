@@ -4,11 +4,9 @@ using UnityEngine;
 
 public class Basket : MonoBehaviour
 {
-    public Rating Rating;
-
     public void OnTriggerEnter2D(Collider2D collision)
     {
         Destroy(collision.gameObject);
-        Rating.UpdateSlimesAmount(1);   
+        Rating.instance.UpdateSlimesAmount(1);   
     }
 }

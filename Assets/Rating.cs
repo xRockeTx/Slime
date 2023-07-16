@@ -8,17 +8,21 @@ public class Rating : MonoBehaviour
 {
     public TextMeshProUGUI SlimesAmountText;
     public Image Star1, Star2, Star3;
-    public int Amount;
+    private int Amount;
     public int Star1Amount, Star2Amount, Star3Amount;
     public GameObject Panel;
+    public static Rating instance;
+    public PopUpWindow PopUp;
 
     public FinishUI Finish;
 
     public void Awake()
     {
+        instance = this;
         Panel.SetActive(true);
         Amount = 0;
         UpdateSlimesAmount(0);
+        PopUp.Initialize();
     }
     public void UpdateSlimesAmount(int amount)
     {

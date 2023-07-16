@@ -5,7 +5,15 @@ using UnityEngine;
 public class PopUpWindow : MonoBehaviour
 {
     public List<GameObject> Slimes;
-    public List<Cannon> Cannons;
+    private Cannon[] Cannons;
+    public void Initialize()
+    {
+        Cannons = (Cannon[])FindObjectsOfTypeAll(typeof(Cannon));
+        foreach (Cannon cannon in Cannons)
+        {
+            cannon.CurrentSlime = Slimes[0];
+        }
+    }
     public void Open()
     {
         gameObject.SetActive(true);

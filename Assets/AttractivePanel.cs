@@ -29,11 +29,4 @@ public class AttractivePanel : MonoBehaviour
             }
         }
     }
-    public void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
-        {
-            Click();
-        }
-    }
 }
