@@ -4,14 +4,35 @@ using UnityEngine;
 
 public class PopUpWindow : MonoBehaviour
 {
-    public List<GameObject> Slimes;
     private Cannon[] Cannons;
+    public List<GameObject> Selects;
+    public GameObject button;
     public void Initialize()
     {
         Cannons = (Cannon[])FindObjectsOfTypeAll(typeof(Cannon));
         foreach (Cannon cannon in Cannons)
         {
-            cannon.CurrentSlime = Slimes[0];
+            cannon.CurrentSlime = LevelConfiguration.instance.Slimes[0].gameObject;
+        }
+        int slimeCount = LevelConfiguration.instance.Slimes.Count;
+        if (slimeCount == 1)
+        {
+            button.SetActive(false);
+        }
+        else
+        {
+            button.SetActive(true);
+            for (int i = 0; i < Selects.Count; i++)
+            {
+                if (i < slimeCount)
+                {
+                    Selects[i].SetActive(true);
+                }
+                else
+                {
+                    Selects[i].SetActive(false);
+                }
+            }
         }
     }
     public void Open()
@@ -22,7 +43,7 @@ public class PopUpWindow : MonoBehaviour
     {
         foreach (Cannon cannon in Cannons)
         {
-            cannon.CurrentSlime = Slimes[id];
+            cannon.CurrentSlime = LevelConfiguration.instance.Slimes[id].gameObject;
         }
         Close();
     }

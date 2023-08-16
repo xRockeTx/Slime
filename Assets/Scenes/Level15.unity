@@ -1003,9 +1003,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Force: 800
   Firerate: 0.4
-  FirstSlimesAmount: 25
-  currentFirerent: 0
-  Rating: {fileID: 2914806908785419435}
   canShoot: 0
   SlimesAmount: 25
   CurrentSlime: {fileID: 0}
@@ -1495,6 +1492,53 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 24.557}
+--- !u!1 &937871964
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 937871966}
+  - component: {fileID: 937871965}
+  m_Layer: 0
+  m_Name: Config
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &937871965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937871964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f90f87c7141d6ca489dd3279f2cacaaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SlimesAmount: 30
+  SlimeTypes: 00000000
+  Slimes: []
+--- !u!4 &937871966
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937871964}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 29
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &943371547
 GameObject:
   m_ObjectHideFlags: 0
@@ -3086,16 +3130,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2914806908785419435 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2498120425365908959, guid: 945351be6b8973c4d8d6cce91ad483b2, type: 3}
-  m_PrefabInstance: {fileID: 781482537185134964}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f3a3cc3e8b86c148b6d7f76f1022f63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

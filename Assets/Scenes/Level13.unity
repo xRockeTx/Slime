@@ -442,7 +442,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 430772554b316274bbf89aa86b0f9ba2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Rating: {fileID: 2914806908785419435}
 --- !u!60 &224731327
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1002,14 +1001,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93c243d5bd394354892270ff4874bcad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SlimesAmountText: {fileID: 2914806908674576734}
-  CurrentSlime: {fileID: 0}
   Force: 800
   Firerate: 0.4
-  SlimesAmount: 25
-  FirstSlimesAmount: 25
-  Rating: {fileID: 2914806908785419435}
   canShoot: 0
+  SlimesAmount: 25
+  CurrentSlime: {fileID: 0}
+  SlimesAmountText: {fileID: 2914806908674576734}
+  Following: {fileID: 0}
+  isFollow: 0
 --- !u!212 &694983296
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2855,6 +2854,53 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 24.557}
+--- !u!1 &1996634574
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1996634576}
+  - component: {fileID: 1996634575}
+  m_Layer: 0
+  m_Name: Config
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1996634575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1996634574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f90f87c7141d6ca489dd3279f2cacaaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SlimesAmount: 30
+  SlimeTypes: 00000000
+  Slimes: []
+--- !u!4 &1996634576
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1996634574}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 30
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2004072023
 GameObject:
   m_ObjectHideFlags: 0
@@ -3144,16 +3190,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2914806908785419435 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2498120425365908959, guid: 945351be6b8973c4d8d6cce91ad483b2, type: 3}
-  m_PrefabInstance: {fileID: 781482537185134964}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f3a3cc3e8b86c148b6d7f76f1022f63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

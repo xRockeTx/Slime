@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Slime : MonoBehaviour
 {
+    public SlimeType SlimeType;
     private bool isDestructive=false, isExplosive = false;
     private Destructive DestructiveComponent;
     private Explosive ExplosiveComponent;

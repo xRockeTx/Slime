@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class AttractivePanel : MonoBehaviour
 {
-    public List<Attract> Attracts;
+    public Attract Cannons;
     public Attract Magnetic;
     public bool isMagnetic = false;
     public delegate void Attract();
@@ -13,7 +13,6 @@ public class AttractivePanel : MonoBehaviour
     public void Awake()
     {
         instance = this;
-        Attracts = new List<Attract>();
     }
     public void Click()
     {
@@ -23,10 +22,7 @@ public class AttractivePanel : MonoBehaviour
         }
         else
         {
-            foreach(Attract attract in Attracts)
-            {
-                attract();
-            }
+            Cannons();
         }
     }
 }

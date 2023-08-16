@@ -22,6 +22,9 @@ public class Rating : MonoBehaviour
         Panel.SetActive(true);
         Amount = 0;
         UpdateSlimesAmount(0);
+    }
+    public void Start()
+    {
         PopUp.Initialize();
     }
     public void UpdateSlimesAmount(int amount)

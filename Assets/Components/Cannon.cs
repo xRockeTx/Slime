@@ -5,23 +5,19 @@ using UnityEngine;
 
 public class Cannon : MonoBehaviour
 {
-    [Header("Обязательно")]
     public float Force=10f,Firerate=.4f;
-    public int FirstSlimesAmount=20;
 
-    [Header("Не заполянть")]
-    public float currentFirerent=0;
-    public Rating Rating;
-    public bool canShoot;
+    private float currentFirerent=0;
+    private Rating Rating;
+    [HideInInspector] public bool canShoot;
     public int SlimesAmount = 20;
-    public GameObject CurrentSlime;
-    public TextMeshProUGUI SlimesAmountText;
-    public Following Following;
-    public bool isFollow=false;
+    [HideInInspector] public GameObject CurrentSlime;
+    [HideInInspector] public TextMeshProUGUI SlimesAmountText;
+    [HideInInspector] public Following Following;
+    [HideInInspector] public bool isFollow=false;
 
     public void Awake()
     {
-        SlimesAmount = FirstSlimesAmount;
         if (gameObject.TryGetComponent<Following>(out Following followingComponent))
         {
             isFollow = transform;
@@ -34,7 +30,7 @@ public class Cannon : MonoBehaviour
         Rating = Rating.instance;
         Rating.SlimesAmountText.text = SlimesAmount.ToString();
         SlimesAmountText = Rating.SlimesAmountText;
-        AttractivePanel.instance.Attracts.Add(Attract);
+        AttractivePanel.instance.Cannons+=Attract;
     }
 
     private void Update()
