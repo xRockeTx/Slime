@@ -8,6 +8,7 @@ public class Rating : MonoBehaviour
 {
     public TextMeshProUGUI SlimesAmountText;
     public Image Star1, Star2, Star3;
+    public Sprite HasStar, HasntStar;
     private int Amount;
     public int Star1Amount, Star2Amount, Star3Amount;
     public GameObject Panel;
@@ -34,31 +35,37 @@ public class Rating : MonoBehaviour
 
         if(Amount > Star1Amount)
         {
+            Star1.sprite = HasStar;
             Star1.fillAmount = 1;
             if (Amount > Star1Amount+Star2Amount)
             {
+                Star2.sprite = HasStar;
                 Star2.fillAmount = 1;
                 if (Amount > Star1Amount+Star2Amount+ Star3Amount)
                 {
+                    Star3.sprite = HasStar;
                     Star3.fillAmount = 1;
                     SendInfo();
                 }
                 else
                 {
+                    Star3.sprite = HasStar;
                     Star3.fillAmount = (float)(Amount - Star1Amount - Star2Amount) / (float)(Star3Amount);
                 }
             }
             else
             {
+                Star2.sprite = HasStar;
                 Star2.fillAmount = (float)(Amount- Star1Amount) / (float)(Star2Amount);
-                Star3.fillAmount = 0;
+                Star3.sprite = HasntStar;
             }
         }
         else
         {
+            Star1.sprite = Amount==0?HasntStar: HasStar;
             Star1.fillAmount = (float)Amount/ (float)Star1Amount;
-            Star2.fillAmount = 0;
-            Star3.fillAmount = 0;
+            Star2.sprite = HasntStar;
+            Star3.sprite = HasntStar;
         }
     }
     public void SendInfo()
