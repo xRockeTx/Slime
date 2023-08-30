@@ -5,9 +5,9 @@ using UnityEngine;
 public class LevelConfiguration : MonoBehaviour
 {
     public static LevelConfiguration instance;
-    public int SlimesAmount;
+    [HideInInspector] public int SlimesAmount;
     public List<SlimeType> SlimeTypes;
-    public List<Slime> Slimes;
+    [HideInInspector] public List<Slime> Slimes;
 
     public void Awake()
     {
