@@ -738,10 +738,10 @@ TextureImporter:
       name: 2109.w032.n003.116B.p1.116 1_30
       rect:
         serializedVersion: 2
-        x: 46
-        y: 426
-        width: 2000
-        height: 200
+        x: 1554
+        y: 227
+        width: 631
+        height: 399
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -759,10 +759,10 @@ TextureImporter:
       name: 2109.w032.n003.116B.p1.116 1_31
       rect:
         serializedVersion: 2
-        x: 2515
-        y: 264
-        width: 1947
-        height: 362
+        x: 3234
+        y: 229
+        width: 566
+        height: 467
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -822,9 +822,9 @@ TextureImporter:
       name: 2109.w032.n003.116B.p1.116 1_34
       rect:
         serializedVersion: 2
-        x: 2046
+        x: 2469
         y: 226
-        width: 2000
+        width: 1577
         height: 200
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -885,9 +885,9 @@ TextureImporter:
       name: 2109.w032.n003.116B.p1.116 1_37
       rect:
         serializedVersion: 2
-        x: 2046
+        x: 2451
         y: 26
-        width: 2000
+        width: 1595
         height: 200
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
